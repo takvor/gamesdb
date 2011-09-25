@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  players: 1
+  completed: false
+  purchase_date: 2011-09-25
+  completion_date: 2011-09-25
+  cost: 9.99
+
+two:
+  title: MyString
+  players: 1
+  completed: false
+  purchase_date: 2011-09-25
+  completion_date: 2011-09-25
+  cost: 9.99

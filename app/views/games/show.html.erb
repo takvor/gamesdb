@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @game.title %>
+</p>
+
+<p>
+  <b>Players:</b>
+  <%= @game.players %>
+</p>
+
+<p>
+  <b>Completed:</b>
+  <%= @game.completed %>
+</p>
+
+<p>
+  <b>Purchase date:</b>
+  <%= @game.purchase_date %>
+</p>
+
+<p>
+  <b>Completion date:</b>
+  <%= @game.completion_date %>
+</p>
+
+<p>
+  <b>Cost:</b>
+  <%= number_to_currency(@game.cost) %>
+</p>
+
+
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>

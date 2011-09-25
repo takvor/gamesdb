@@ -1,0 +1,33 @@
+<h1>Listing games</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Players</th>
+    <th>Completed</th>
+    <th>Purchase date</th>
+    <th>Completion date</th>
+    <th>Cost</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @games.each do |game| %>
+  <tr>
+    <td><%= game.title %></td>
+    <td><%= game.players %></td>
+    <td><%= game.completed %></td>
+    <td><%= game.purchase_date %></td>
+    <td><%= game.completion_date %></td>
+    <td><%= number_to_currency(game.cost) %></td>
+    <td><%= link_to 'Show', game %></td>
+    <td><%= link_to 'Edit', edit_game_path(game) %></td>
+    <td><%= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Game', new_game_path %>
