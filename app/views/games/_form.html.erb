@@ -20,20 +20,20 @@
     <%= f.text_field :players %>
   </div>
   <div class="field">
+    <%= f.label :system %><br />
+    <%= f.text_field :system %>
+  </div>
+  <div class="field">
+    <%= f.label :genre %><br />
+    <%= f.text_field :genre %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
     <%= f.label :completed %><br />
     <%= f.check_box :completed %>
-  </div>
-  <div class="field">
-    <%= f.label :purchase_date %><br />
-    <%= f.date_select :purchase_date %>
-  </div>
-  <div class="field">
-    <%= f.label :completion_date %><br />
-    <%= f.date_select :completion_date %>
-  </div>
-  <div class="field">
-    <%= f.label :cost %><br />
-    <%= f.text_field :cost %>
   </div>
   <div class="actions">
     <%= f.submit %>

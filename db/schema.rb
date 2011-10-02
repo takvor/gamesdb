@@ -10,17 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110925192723) do
+ActiveRecord::Schema.define(:version => 20110926033320) do
 
   create_table "games", :force => true do |t|
     t.string   "title"
     t.integer  "players"
     t.boolean  "completed"
-    t.date     "purchase_date"
-    t.date     "completion_date"
-    t.decimal  "cost",            :precision => 6, :scale => 2
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "system"
+    t.string   "genre"
+    t.string   "location"
   end
 
 end
