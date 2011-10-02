@@ -7,6 +7,7 @@ gem 'rails', '3.0.9'
 
 gem 'pg'
 gem 'thin'
+gem 'taps'
 
 # Use unicorn as the web server
 # gem 'unicorn'
