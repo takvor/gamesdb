@@ -14,7 +14,7 @@
     <th>Genre</th>
     <th>System</th>
     <th>Location</th>
-    <th></th>
+    <!-- <th></th> -->
     <th></th>
     <th></th>
   </tr>
@@ -23,13 +23,13 @@
   <tr>
     <td><%= game.title %></td>
     <td><%= game.players %></td>
-    <td><%= game.completed %></td>
+    <td><%= game.completed.to_s.capitalize %></td>
     <td><%= game.genre %></td>
     <td><%= game.system %></td>
     <td><%= game.location %></td>
-    <td><%= link_to 'Show', game %></td>
+    <!-- <td><%= link_to 'Show', game %></td> -->
     <td><%= link_to 'Edit', edit_game_path(game) %></td>
-    <td><%= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Delete', game, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
